@@ -12,11 +12,11 @@
         <!--Antibiotics-->
         <scene sceneID="TQs-xp-JoO">
             <objects>
-                <tableViewController id="4Xb-3i-lwG" customClass="AntibioticsViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Antibiotics" id="4Xb-3i-lwG" customClass="AntibioticsViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CNj-Zj-wqC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.2784313725" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" id="2GH-zg-xx0">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -48,24 +48,25 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Antibiotics" id="hLM-xP-7Tu"/>
                     <connections>
-                        <segue destination="rRT-4n-ATy" kind="show" identifier="Antibacterial" id="rH6-5o-OmT"/>
+                        <segue destination="rRT-4n-ATy" kind="show" identifier="layer2" id="rH6-5o-OmT"/>
+                        <segue destination="hNB-Vt-hq1" kind="show" identifier="AntibioticsToSpectrum" id="ngs-ga-Cg1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qck-Ja-kjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1111.2" y="161.46926536731635"/>
         </scene>
-        <!--Antibacterial-->
+        <!--layer2-->
         <scene sceneID="XgF-tr-rpN">
             <objects>
-                <tableViewController title="Antibacterial" id="rRT-4n-ATy" customClass="AntibacterialViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="layer2" id="rRT-4n-ATy" customClass="SubCatViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ueo-NY-RBp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.2784313725" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AntibacterialCell" id="5nd-Z9-QGZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Layer2Cell" id="5nd-Z9-QGZ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5nd-Z9-QGZ" id="Qg6-9x-XcT">
@@ -79,10 +80,105 @@
                             <outlet property="delegate" destination="rRT-4n-ATy" id="FBB-fP-2d7"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="DDZ-su-gGM" kind="show" identifier="layer3" id="C6e-Yx-rNa"/>
+                        <segue destination="hNB-Vt-hq1" kind="show" identifier="Layer2ToSpectrum" id="sZm-kg-6xm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uQ-N8-r5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2068" y="161"/>
+        </scene>
+        <!--layer3-->
+        <scene sceneID="dNo-xm-5UW">
+            <objects>
+                <tableViewController title="layer3" id="DDZ-su-gGM" customClass="Layer3ViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hn1-KP-KTX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Layer3Cell" id="VAn-jv-NJX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VAn-jv-NJX" id="nJA-8k-ooV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DDZ-su-gGM" id="2UG-VH-zg0"/>
+                            <outlet property="delegate" destination="DDZ-su-gGM" id="w8y-fm-6oV"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="hNB-Vt-hq1" kind="show" identifier="Layer3ToSpectrum" id="yDo-js-GMQ"/>
+                        <segue destination="Mqi-5o-T7V" kind="show" identifier="Layer3ToLayer4" id="HyS-S3-Y1L"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tc6-n9-H5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2941.5999999999999" y="160.56971514242881"/>
+        </scene>
+        <!--Spectrum Of Activity-->
+        <scene sceneID="vvI-zB-zOz">
+            <objects>
+                <tableViewController title="Spectrum Of Activity" id="hNB-Vt-hq1" customClass="SpectrumViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1nD-dm-Xyj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpectrumCells" id="QNG-54-lrQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QNG-54-lrQ" id="fAJ-1C-nms">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hNB-Vt-hq1" id="6MD-4O-YZh"/>
+                            <outlet property="delegate" destination="hNB-Vt-hq1" id="JBI-cz-bTJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ff9-CX-NcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3662" y="601"/>
+        </scene>
+        <!--Layer 4-->
+        <scene sceneID="Pls-DW-0zq">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ui8-sH-WOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Layer 4" id="Mqi-5o-T7V" customClass="Layer4ViewController" customModule="hopkins_antibiotics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z2N-2y-UWE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Layer4Cells" id="6vs-0V-Qkr">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6vs-0V-Qkr" id="zJR-Ax-3p4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mqi-5o-T7V" id="iqg-TD-lJB"/>
+                            <outlet property="delegate" destination="Mqi-5o-T7V" id="7SP-ad-CvW"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="hNB-Vt-hq1" kind="show" identifier="Layer4ToSpectrum" id="hO2-D4-nSV"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="3662" y="-203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pVC-Wi-uSo">
@@ -103,5 +199,8 @@
             <point key="canvasLocation" x="172" y="161.46926536731635"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hO2-D4-nSV"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.1647058824" green="0.4431372549" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

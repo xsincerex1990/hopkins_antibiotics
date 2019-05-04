@@ -9,8 +9,9 @@
 import UIKit
 
 class AntibioticsViewController: UITableViewController {
-    
-    let antibioticsArray = ["Antibacterial",
+    var pathNumber = 0
+    let antibioticsArray = [
+    "Antibacterial",
     "Antifungal",
     "Antimycobacterial",
     "Antiparasitic",
@@ -44,9 +45,16 @@ class AntibioticsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: antibioticsArray[indexPath.row], sender: self)
+        pathNumber = indexPath.row
+        performSegue(withIdentifier: "layer2", sender: self)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "layer2" {
+            let subCatVC = segue.destination as! SubCatViewController
+            subCatVC.data = antibioticsArray[pathNumber]
+        }
+    }
 
 }
 

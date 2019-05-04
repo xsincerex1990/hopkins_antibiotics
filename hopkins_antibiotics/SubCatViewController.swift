@@ -8,7 +8,9 @@
 
 import UIKit
 
-class AntibacterialViewController: UITableViewController {
+class SubCatViewController: UITableViewController {
+    var pathNumber = 0
+    var data = ""
     
     let antibacterialArray = [
         "Aminoglycosides",
@@ -52,6 +54,7 @@ class AntibacterialViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.title = data
 
     }
     
@@ -62,12 +65,25 @@ class AntibacterialViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AntibacterialCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Layer2Cell", for: indexPath)
         
         cell.textLabel?.text = antibacterialArray[indexPath.row]
         
         return cell
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pathNumber = indexPath.row
+        performSegue(withIdentifier: "layer3", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "layer3" {
+            let layer3VC = segue.destination as! Layer3ViewController
+            layer3VC.data = antibacterialArray[pathNumber]
+        }
     }
     
 }

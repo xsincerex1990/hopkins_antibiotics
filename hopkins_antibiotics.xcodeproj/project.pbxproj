@@ -12,7 +12,10 @@
 		B8B243C9226FC3B600F603AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B243C7226FC3B600F603AA /* Main.storyboard */; };
 		B8B243CB226FC3B700F603AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B243CA226FC3B700F603AA /* Assets.xcassets */; };
 		B8B243CE226FC3B700F603AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B243CC226FC3B700F603AA /* LaunchScreen.storyboard */; };
-		B8B24402227A68D100F603AA /* AntibacterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24401227A68D100F603AA /* AntibacterialViewController.swift */; };
+		B8B24402227A68D100F603AA /* SubCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24401227A68D100F603AA /* SubCatViewController.swift */; };
+		B8B24404227CC59600F603AA /* Layer3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24403227CC59600F603AA /* Layer3ViewController.swift */; };
+		B8B24408227D135300F603AA /* Layer4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24407227D135300F603AA /* Layer4ViewController.swift */; };
+		B8B2440A227D136F00F603AA /* SpectrumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24409227D136F00F603AA /* SpectrumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		B8B243CA226FC3B700F603AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8B243CD226FC3B700F603AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8B243CF226FC3B700F603AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8B24401227A68D100F603AA /* AntibacterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntibacterialViewController.swift; sourceTree = "<group>"; };
+		B8B24401227A68D100F603AA /* SubCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCatViewController.swift; sourceTree = "<group>"; };
+		B8B24403227CC59600F603AA /* Layer3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer3ViewController.swift; sourceTree = "<group>"; };
+		B8B24407227D135300F603AA /* Layer4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer4ViewController.swift; sourceTree = "<group>"; };
+		B8B24409227D136F00F603AA /* SpectrumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				B8B243C3226FC3B600F603AA /* AppDelegate.swift */,
 				B8B243C5226FC3B600F603AA /* AntibioticsViewController.swift */,
-				B8B24401227A68D100F603AA /* AntibacterialViewController.swift */,
+				B8B24401227A68D100F603AA /* SubCatViewController.swift */,
+				B8B24403227CC59600F603AA /* Layer3ViewController.swift */,
+				B8B24407227D135300F603AA /* Layer4ViewController.swift */,
+				B8B24409227D136F00F603AA /* SpectrumViewController.swift */,
 				B8B243C7226FC3B600F603AA /* Main.storyboard */,
 				B8B243CA226FC3B700F603AA /* Assets.xcassets */,
 				B8B243CC226FC3B700F603AA /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B24402227A68D100F603AA /* AntibacterialViewController.swift in Sources */,
+				B8B24402227A68D100F603AA /* SubCatViewController.swift in Sources */,
 				B8B243C6226FC3B600F603AA /* AntibioticsViewController.swift in Sources */,
+				B8B2440A227D136F00F603AA /* SpectrumViewController.swift in Sources */,
 				B8B243C4226FC3B600F603AA /* AppDelegate.swift in Sources */,
+				B8B24408227D135300F603AA /* Layer4ViewController.swift in Sources */,
+				B8B24404227CC59600F603AA /* Layer3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
