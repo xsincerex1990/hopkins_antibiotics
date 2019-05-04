@@ -16,6 +16,8 @@
 		B8B24404227CC59600F603AA /* Layer3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24403227CC59600F603AA /* Layer3ViewController.swift */; };
 		B8B24408227D135300F603AA /* Layer4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24407227D135300F603AA /* Layer4ViewController.swift */; };
 		B8B2440A227D136F00F603AA /* SpectrumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24409227D136F00F603AA /* SpectrumViewController.swift */; };
+		B8B2440D227E0E7F00F603AA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8B2440B227E0E7F00F603AA /* Model.xcdatamodeld */; };
+		B8B24431227E335500F603AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B24430227E335500F603AA /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B8B24403227CC59600F603AA /* Layer3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer3ViewController.swift; sourceTree = "<group>"; };
 		B8B24407227D135300F603AA /* Layer4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer4ViewController.swift; sourceTree = "<group>"; };
 		B8B24409227D136F00F603AA /* SpectrumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumViewController.swift; sourceTree = "<group>"; };
+		B8B2440C227E0E7F00F603AA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B8B24430227E335500F603AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +73,21 @@
 				B8B24407227D135300F603AA /* Layer4ViewController.swift */,
 				B8B24409227D136F00F603AA /* SpectrumViewController.swift */,
 				B8B243C7226FC3B600F603AA /* Main.storyboard */,
+				B8B2440E227E283C00F603AA /* DataModel */,
 				B8B243CA226FC3B700F603AA /* Assets.xcassets */,
 				B8B243CC226FC3B700F603AA /* LaunchScreen.storyboard */,
 				B8B243CF226FC3B700F603AA /* Info.plist */,
 			);
 			path = hopkins_antibiotics;
+			sourceTree = "<group>";
+		};
+		B8B2440E227E283C00F603AA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8B2440B227E0E7F00F603AA /* Model.xcdatamodeld */,
+				B8B24430227E335500F603AA /* Item.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +164,8 @@
 				B8B24402227A68D100F603AA /* SubCatViewController.swift in Sources */,
 				B8B243C6226FC3B600F603AA /* AntibioticsViewController.swift in Sources */,
 				B8B2440A227D136F00F603AA /* SpectrumViewController.swift in Sources */,
+				B8B2440D227E0E7F00F603AA /* Model.xcdatamodeld in Sources */,
+				B8B24431227E335500F603AA /* Item.swift in Sources */,
 				B8B243C4226FC3B600F603AA /* AppDelegate.swift in Sources */,
 				B8B24408227D135300F603AA /* Layer4ViewController.swift in Sources */,
 				B8B24404227CC59600F603AA /* Layer3ViewController.swift in Sources */,
@@ -352,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8B2440B227E0E7F00F603AA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8B2440C227E0E7F00F603AA /* Model.xcdatamodel */,
+			);
+			currentVersion = B8B2440C227E0E7F00F603AA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8B243B8226FC3B600F603AA /* Project object */;
 }
